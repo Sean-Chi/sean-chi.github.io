@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No Man's Sky - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>No Man's Sky</h1>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="features.html">Features</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <button id="themeBtn">Toggle Dark</button>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Welcome to No Man's Sky</h2>
+            <p>No Man's Sky is an open-world space exploration survival game. It features a nearly infinite universe with procedurally generated galaxies and planets. You can travel across the stars, mine resources, build bases, pilot starships and explore freely in the vast cosmos.</p>
+            <figure>
+                <img src="images/nms1.jpg" alt="Alien planet landscape">
+                <figcaption>Landscape on an alien planet</figcaption>
+            </figure>
+        </section>
+    </main>
+    <script>
+        const btn = document.getElementById('themeBtn');
+        btn.onclick = () => {
+            document.body.classList.toggle('star-dark');
+        }
+    </script>
+</body>
+</html>
