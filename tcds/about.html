@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Dim Sum</title>
+    <meta property="og:title" content="About Dim Sum">
+    <meta property="og:description" content="The origin and history of Cantonese dim sum">
+    <meta property="og:image" content="images/siumai.jpg">
+    <link rel="icon" href="images/siumai.jpg">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Traditional Chinese Dim Sum</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Dim Sum</a></li>
+                <li><a href="varieties.html">Classic Varieties</a></li>
+                <li><a href="culture.html">Tea & Culture</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="card">
+            <h2>History & Origin</h2>
+            <p>Dim Sum originated in southern China, along the ancient Silk Road teahouses. Travellers stopped to rest, drink tea and eat small snacks. Later it developed into the famous "Yum Cha" culture in Guangzhou and Hong Kong.</p>
+            <img src="images/siumai.jpg" alt="Siu Mai pork dumplings">
+            <p>Most dim sum are handmade. Chefs need great skill to make thin wrappers and balanced fillings. It is not only food, but also a craft.</p>
+            <button id="themeBtn">Switch Light / Dark Mode</button>
+        </section>
+    </main>
+    <footer>
+        <p>Web Technology Course Work | Chi Zixuan</p>
+    </footer>
+    <script>
+        const btn = document.getElementById('themeBtn');
+        btn.addEventListener('click', ()=>{
+            document.body.classList.toggle('light-mode');
+        })
+    </script>
+</body>
+</html>
