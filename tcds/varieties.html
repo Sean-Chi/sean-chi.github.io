@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Varieties</title>
+    <meta property="og:title" content="Classic Dim Sum Varieties">
+    <meta property="og:description" content="Har Gow, Siu Mai, Egg Tart and more classic dim sum">
+    <meta property="og:image" content="images/eggtart.jpg">
+    <link rel="icon" href="images/eggtart.jpg">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Traditional Chinese Dim Sum</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Dim Sum</a></li>
+                <li><a href="varieties.html">Classic Varieties</a></li>
+                <li><a href="culture.html">Tea & Culture</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="card">
+            <h2>Must-Try Dim Sum</h2>
+            <ul>
+                <li><strong>Har Gow</strong>: Crystal shrimp dumplings, the symbol of dim sum.</li>
+                <li><strong>Siu Mai</strong>: Open-topped pork and shrimp dumplings.</li>
+                <li><strong>Egg Tart</strong>: Sweet baked custard tart with flaky crust.</li>
+                <li><strong>Char Siu Bao</strong>: Soft steamed buns filled with sweet barbecue pork.</li>
+                <li><strong>Cheong Fun</strong>: Smooth rice noodle rolls.</li>
+            </ul>
+            <img src="images/eggtart.jpg" alt="Cantonese egg tarts">
+            <button id="themeBtn">Switch Light / Dark Mode</button>
+        </section>
+    </main>
+    <footer>
+        <p>Web Technology Course Work | Chi Zixuan</p>
+    </footer>
+    <script>
+        const btn = document.getElementById('themeBtn');
+        btn.addEventListener('click', ()=>{
+            document.body.classList.toggle('light-mode');
+        })
+    </script>
+</body>
+</html>
