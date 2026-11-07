@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traditional Chinese Dim Sum</title>
+    <meta property="og:title" content="Traditional Chinese Dim Sum">
+    <meta property="og:description" content="Explore the culture and taste of classic Cantonese dim sum">
+    <meta property="og:image" content="images/hargow.jpg">
+    <link rel="icon" href="images/hargow.jpg">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Traditional Chinese Dim Sum</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Dim Sum</a></li>
+                <li><a href="varieties.html">Classic Varieties</a></li>
+                <li><a href="culture.html">Tea & Culture</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="card">
+            <h2>Welcome to the world of Dim Sum</h2>
+            <p>Dim Sum is a famous Cantonese food tradition, meaning "touch the heart". These small, delicate steamed, baked or fried dishes are shared with family and friends over hot tea.</p>
+            <img src="images/hargow.jpg" alt="Har Gow shrimp dumplings">
+            <button id="themeBtn">Switch Light / Dark Mode</button>
+        </section>
+    </main>
+    <footer>
+        <p>Web Technology Course Work | Chi Zixuan</p>
+    </footer>
+    <script>
+        const btn = document.getElementById('themeBtn');
+        btn.addEventListener('click', ()=>{
+            document.body.classList.toggle('light-mode');
+        })
+    </script>
+</body>
+</html>
