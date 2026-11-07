@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea & Culture</title>
+    <meta property="og:title" content="Tea and Yum Cha Culture">
+    <meta property="og:description" content="Yum Cha: drinking tea and sharing dim sum">
+    <meta property="og:image" content="images/hargow.jpg">
+    <link rel="icon" href="images/hargow.jpg">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Traditional Chinese Dim Sum</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Dim Sum</a></li>
+                <li><a href="varieties.html">Classic Varieties</a></li>
+                <li><a href="culture.html">Tea & Culture</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="card">
+            <h2>Yum Cha: Tea and Dim Sum</h2>
+            <p>Yum Cha means "drink tea". People go to teahouses in the morning or weekend to chat, relax and share small plates. Popular tea choices are Pu-erh, Oolong and Chrysanthemum tea. Tea helps balance the rich taste of dim sum.</p>
+            <p>It is a social tradition. Many families keep this habit for generations.</p>
+            <button id="themeBtn">Switch Light / Dark Mode</button>
+        </section>
+    </main>
+    <footer>
+        <p>Web Technology Course Work | Chi Zixuan</p>
+    </footer>
+    <script>
+        const btn = document.getElementById('themeBtn');
+        btn.addEventListener('click', ()=>{
+            document.body.classList.toggle('light-mode');
+        })
+    </script>
+</body>
+</html>
